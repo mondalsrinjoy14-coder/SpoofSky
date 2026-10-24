@@ -1,0 +1,62 @@
+{
+  "schema_version": "0.1",
+  "dataset_id": "demo-observations-v1",
+  "reference_time": "2026-10-24T05:10:00Z",
+  "source": {
+    "source_id": "spoofsky-demo-fixture",
+    "source_name": "SpoofSky deterministic demonstration fixture",
+    "source_kind": "fixture",
+    "provenance_kind": "simulated",
+    "schema_version": "0.1",
+    "is_demo": true,
+    "coverage_start": "2026-10-24T04:59:00Z",
+    "coverage_end": "2026-10-24T05:07:00Z",
+    "access_restrictions": "Local development and evaluation only; not real aircraft data",
+    "attribution": "SpoofSky project fixture"
+  },
+  "observations": [
+    {
+      "observation_id": "demo-a-001",
+      "source_record_id": "record-001",
+      "aircraft_id": "DEMO-A",
+      "timestamp": "2026-10-24T05:00:00Z",
+      "coordinates": [28.6139, 77.2090],
+      "altitude_ft": 18000,
+      "ground_speed_kt": 245,
+      "heading": 90
+    },
+    {
+      "observation_id": "demo-a-002",
+      "source_record_id": "record-002",
+      "aircraft_id": "DEMO-A",
+      "timestamp": "2026-10-24T05:05:00+00:00",
+      "latitude": "28.6200",
+      "longitude": "77.2500",
+      "altitude_m": 5520,
+      "ground_speed_mps": 126.0,
+      "heading_deg": 91.5
+    },
+    {
+      "observation_id": "demo-a-002",
+      "source_record_id": "record-002-duplicate",
+      "aircraft_id": "DEMO-A",
+      "timestamp": "2026-10-24T05:05:00Z",
+      "coordinates": {"lat": 28.6200, "lon": 77.2500}
+    },
+    {
+      "observation_id": "demo-a-000",
+      "source_record_id": "record-000-out-of-order",
+      "aircraft_id": "DEMO-A",
+      "timestamp": "2026-10-24T04:59:00Z",
+      "coordinates": [28.6100, 77.1900]
+    },
+    {
+      "observation_id": "demo-b-001",
+      "source_record_id": "record-003",
+      "aircraft_id": "DEMO-B",
+      "timestamp": 1792818120,
+      "coordinates": [28.7000, 77.3000],
+      "heading": 180
+    }
+  ]
+}
